@@ -1,4 +1,4 @@
-package Modules;
+package Models;
 
 public enum LevelOf_Difficulty {
     EASY,

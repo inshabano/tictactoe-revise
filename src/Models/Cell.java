@@ -1,20 +1,21 @@
-package Modules;
+package Models;
 
 public class Cell {
     private int row;
-    private int column;
+
+    private int col;
     private Cell_Status Cell_Status;
     private Player player;
-    public Cell(int row, int column) {
+    public Cell(int row, int col) {
         this.row = row;
-        this.column = column;
+        this.col = col;
         Cell_Status = Cell_Status.EMPTY;
 
     }
 
-    public Cell(int row, int column, Cell_Status cell_Status, Player player) {
+    public Cell(int row, int col, Cell_Status cell_Status, Player player) {
         this.row = row;
-        this.column = column;
+        this.col = col;
         Cell_Status = cell_Status;
         this.player = player;
     }
@@ -27,12 +28,12 @@ public class Cell {
         this.row = row;
     }
 
-    public int getColumn() {
-        return column;
+    public int getCol() {
+        return col;
     }
 
-    public void setColumn(int column) {
-        this.column = column;
+    public void setCol(int column) {
+        this.col = col;
     }
 
     public Cell_Status getCell_Status() {

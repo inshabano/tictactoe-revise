@@ -1,4 +1,4 @@
-package Modules;
+package Models;
 
 public class Player {
     private String Id;

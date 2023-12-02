@@ -1,7 +1,6 @@
-package Modules;
+package Models;
 
-import Modules.Board;
-import Strategies.BotStrategy;
+import Strategies.WinningStrategy;
 
 import java.util.List;
 
@@ -12,13 +11,13 @@ public class Game {
     private Player next_player;
     private Game_Progress gameProgress;
     private Player Winner;
-    private List<BotStrategy> WinningStrategy;
+    private List<WinningStrategy> WinningStrategy;
     public void makemove(){}
 
     public Game(List<Player> playerList, Board board,
                 List<Moves> moves, Player next_player,
                 Game_Progress gameProgress, Player winner,
-                List<BotStrategy> winningStrategy) {
+                List<WinningStrategy> winningStrategy) {
         this.playerList = playerList;
         this.board = board;
         this.moves = moves;
@@ -27,4 +26,5 @@ public class Game {
         Winner = winner;
         WinningStrategy = winningStrategy;
     }
+    // TODO add builder design pattern
 }

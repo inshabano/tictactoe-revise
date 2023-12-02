@@ -1,6 +1,9 @@
-package Modules;
+package Bot;
 
-import Strategies.BotStrategy;
+import Bot.BotStrategy;
+import Models.LevelOf_Difficulty;
+import Models.Player;
+import Models.Player_Type;
 
 public class Bot extends Player {
     private LevelOf_Difficulty Difficulty_level;
